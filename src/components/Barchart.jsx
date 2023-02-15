@@ -8,7 +8,7 @@ ChartJS.register(BarElement);
 const BarChart = () => {
     const chartdata = useContext(DataContext);
   var data = {
-    labels: chartdata.map((x) => x.country),
+    labels: chartdata.map((x) => x.country),//this label shows  
     datasets: [
       {
         label: `${chartdata?.intensity} intensity`,

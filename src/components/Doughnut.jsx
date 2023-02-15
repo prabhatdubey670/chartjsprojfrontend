@@ -11,7 +11,7 @@ const DoughnutChart = () => {
     labels: chartdata.map((x) => x.sector),
     datasets: [
       {
-        label: `${chartdata?.region?.length} region`,
+        label: `${chartdata?.region} region`,
         data: chartdata?.likelihood?.map((x) => x.likelihood),
         backgroundColor: [
           "rgba(255, 99, 132, 0.2)",

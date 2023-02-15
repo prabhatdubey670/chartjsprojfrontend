@@ -1,17 +1,19 @@
-import { useRef } from 'react'
-import Nav from './components/Nav'
-import Charts from './components/Charts'
-import './App.css'
+import React from "react";
+import Nav from "./components/Nav";
 
+import "./App.css";
+import Display from "./components/Display";
+
+import DataState from "./Context/DataState";
 
 function App() {
-
   return (
-    <div className="App">
+    <DataState>
       <Nav />
-      <Charts />
-    </div>
-  )
+      <Display />
+      
+    </DataState>
+  );
 }
 
-export default App
+export default App;
